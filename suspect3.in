@@ -1,0 +1,61 @@
+BLOCK SUSPECT_CONFIG
+         0     2.10000000e+01   # 21: 2-loop RGE (default), 11: 1-loop, 99: provided externally
+         3     2.00000000e+00   # RGE accuracy: 1: moderate, 2: accurate (default), 3: expert input via index 9
+         5     2.00000000e+00   # choice for sparticles masses rad. corr. excluding Higgs:
+#               2 ->all (recommended, default); 1->no R.C. in squarks & gauginos.
+         7     2.00000000e+00   # Final spectrum accuracy: 1 -> 1% acc.; 2 -> 0.01 % acc.(default)
+         8     2.00000000e+00   # Higgs boson masses rad. corr. calculation options: 
+#             A simple (but very good) approximation (advantage=fast)  : 0
+#             Full one-loop calculation                                : 1
+#             One-loop  + dominant DSVZ 2-loop (default,recommended)   : 2
+BLOCK MODSEL
+         1     0.00000000e+00   # MSSM:0, mSUGRA:1, mGMSB=2, mAMSB=3, (+100 for nonminimal GMSB, AMSB), Inflation: 200, External: 999
+         3     0.00000000e+00   # MSSM particle content:0, External: 99
+        13    -1.00000000e+00   # Gauge coupling unification scale: -1: calculated, value>0: value for scale fixed
+        14    -1.00000000e+00   # EWSB scale: -1: sqrt(stop1*stop2), value>0: value for scale fixed
+BLOCK MINPAR
+         3     5.000000e+01 # tanbeta(MZ)
+         4     -1.00000000e+00   # sign(mu)
+         5    -100            # A0
+BLOCK SMINPUTS
+         1     1.27934000e+02   # alpha_em^-1(M_Z)^MSbar
+         2     1.16639000e-05   # G_F [GeV^-2]
+         3     1.18000000e-01   # alpha_S(M_Z)^MSbar
+         4     9.11870000e+01   # M_Z pole mass
+         5     4.18000000e+00   # mb(mb)^MSbar
+         6     1.73000000e+02   # mt pole mass
+         7     1.77700000e+00   # mtau pole mass
+        13     1.05658360e-01   # muon pole mass
+        24     1.42000000e+00   # charm pole mass
+BLOCK EXTPAR
+         1    -2.618076e+02 # M_1                 
+         2     2.500000e+02 # M_2  
+         3     2.50000000E+03   # M_3
+        11     3.50000000e+03   # A_t
+        12    -1E+02   # A_b
+        13    -2.500000e+02 # A_tau               
+        14    -6.77437438E+02   # A_u                 
+        15    -8.59633345E+02   # A_d                 
+        16    -2.53493493E+02   # A_e       
+#        17    -4.60623573e+03   # A_c
+#        18    -5.91979687e+03   # A_s
+#        19    -3.53443255e+03   # A_mu
+#        21     4.86427234e+05   # M^2_Hd
+#        22    -4.01017724e+06   # M^2_Hu
+        23     4.272851e+02 # mu(EWSB)    
+        26     2.5E+03   # MA_pole                  
+        31     7.000000e+02 # M_eL                
+        32     7.000000e+02 # M_muL               
+        33     7.000000e+02 # M_tauL              
+        34     7.000000e+02 # M_eR                
+        35     7.000000e+02 # M_muR               
+        36     7.000000e+02 # M_tauR   
+        41     25.45887520E+02   # M_q1L               
+        42     25.45887520E+02   # M_q2L               
+        43     24.97055448E+02   # M_q3L               
+        44     25.27854642E+02   # M_uR                
+        45     25.27854642E+02   # M_cR                
+        46     24.21596092E+02   # M_tR                
+        47     25.25761034E+02   # M_dR                
+        48     25.25761034E+02   # M_sR                
+        49     25.22462473E+02   # M_bR            
